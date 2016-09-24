@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="DEPARTMENTS" EntityType="Model.Store.DEPARTMENTS" store:Type="Tables" Schema="HR" />
+  </EntityContainer>
+  <EntityType Name="DEPARTMENTS">
+    <Key>
+      <PropertyRef Name="DEPARTMENT_ID" />
+    </Key>
+    <Property Name="DEPARTMENT_ID" Type="number" Nullable="false" Precision="4" />
+    <Property Name="DEPARTMENT_NAME" Type="varchar2" Nullable="false" MaxLength="30" />
+  </EntityType>
+</Schema>
